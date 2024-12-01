@@ -12,7 +12,8 @@ body {
   }
   
   .hero-section {
-    background: url('https://media.istockphoto.com/id/529783535/photo/parliament-hill-ottawa-ontario-canada.jpg?s=612x612&w=0&k=20&c=v93R68EMFCkJ9xkpNpDuPlOvulcNQezMxwQjMBZqR68=') no-repeat center center/cover;
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20240530/pngtree-balance-concept-with-scale-image_15735975.jpg') no-repeat center center/cover;
+    background-color: #000; /* Fallback color */
     position: relative;
   }
   
@@ -69,6 +70,19 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.form-control.is-invalid {
+    border-color: #dc3545;
+  }
+  
+  .form-control.is-valid {
+    border-color: #28a745;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+    color: #f8f9fa;
+  }
+
   @media (max-width: 768px) {
     .hero-section {
         padding: 20px;
@@ -79,4 +93,13 @@ body {
     .service-card {
         margin-bottom: 20px;
     }
+
+    .navbar-brand img {
+        height: 50px; /* Adjust logo size for mobile */
+      }
+    
+      .hero-text h1 {
+        font-size: 2rem; /* Adjust heading size */
+      }
+    
 }
